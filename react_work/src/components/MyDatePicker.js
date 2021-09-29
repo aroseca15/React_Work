@@ -190,7 +190,7 @@ export default class MyDatePicker extends Component {
     }
 
     /**
-     *  Renderers
+     *  Renderers  https://nimblewebdeveloper.com/blog/convert-react-class-to-function-component
      */
 
     renderCalendar() {
