@@ -52,7 +52,7 @@ function App() {
       <h1>Welcome Mandy!</h1>
       <h3>Try not to be upset. Do what you can and let Jehovah handle the rest.</h3>
       <AppointmentForm/>
-      
+      {/* <div class="rbc-toolbar"><span class="rbc-btn-group"><button type="button">Today</button><button type="button">Back</button><button type="button">Next</button></span><span class="rbc-toolbar-label">October 2021</span><span class="rbc-btn-group"><button type="button" class="rbc-active">Month</button><button type="button" class="">Week</button><button type="button" class="">Day</button><button type="button" class="">Agenda</button></span></div> */}
       <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ width: 600, height: 500, margin: "50px" }} />
     </div>
   );

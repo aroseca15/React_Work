@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-
+// Learning credit: rinas musthafa of medium.com
 let oneDay = 60 * 60 * 24 * 1000;
 let todayTimestamp = Date.now() - (Date.now() % oneDay) + (new Date().getTimezoneOffset() * 1000 * 60);
 let inputRef = React.createRef();
