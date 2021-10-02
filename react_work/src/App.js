@@ -9,7 +9,18 @@ import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import React, { useState } from "react";
- 
+
+let MyCustomHeader = ({ label,  onNavigate, onView }) => (
+
+  <div className="rbc-toolbar">
+    <span className="rbc-btn-group"></span>
+  <button onClick= {()=> {onNavigate("PREV")}} type="button">Back</button>
+  <span className="rbc-toolbar-label">{label}</span>
+  <button onClick= {()=> {onNavigate("NEXT")}} type="button">Next</button>
+  <span className="rbc-btn-group"> <button onClick= {()=> {onNavigate("TODAY")}} type="button">Today</button><button type="button" onClick= {()=> {onView("month")}} className="rbc-active">Month</button><button onClick= {()=> {onView("week")}} type="button" className="">Week</button><button onClick= {()=> {onView("day")}} type="button" className="">Day</button><button onClick= {()=> {onView("agenda")}} type="button" className="">Agenda</button></span></div> 
+)
+
+
 const locales = {
   "en-US": require('date-fns/locale/en-US')
 
@@ -22,6 +33,8 @@ const localizer = dateFnsLocalizer({
   getDay,
   locales
 })
+
+
 
 const events = [
   {
@@ -45,15 +58,14 @@ const events = [
 ]
 
 
-
 function App() {
   return (
     <div className="App">
       <h1>Welcome Mandy!</h1>
       <h3>Try not to be upset. Do what you can and let Jehovah handle the rest.</h3>
-      <AppointmentForm/>
+      <AppointmentForm />
       {/* <div class="rbc-toolbar"><span class="rbc-btn-group"><button type="button">Today</button><button type="button">Back</button><button type="button">Next</button></span><span class="rbc-toolbar-label">October 2021</span><span class="rbc-btn-group"><button type="button" class="rbc-active">Month</button><button type="button" class="">Week</button><button type="button" class="">Day</button><button type="button" class="">Agenda</button></span></div> */}
-      <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ width: 600, height: 500, margin: "50px" }} />
+      <Calendar components={{ toolbar: MyCustomHeader }} localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ width: 600, height: 500, margin: "50px" }} />
     </div>
   );
 }
