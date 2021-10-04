@@ -359,4 +359,9 @@ background-color: #059c67;
   font-weight: 600;
 }
 
-/*  */
+/* Recent Notes Display Card: */
+.recentDisplayCard{
+  height: 20rem;
+  width: 20rem;
+  margin: 5rem;
+}
