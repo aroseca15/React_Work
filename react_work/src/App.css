@@ -313,3 +313,21 @@ background-color: #4583f0;
 border-radius: 50%;
 background-color: #059c67;
 }
+
+.controls{
+  border-radius: 10px;
+  /* display: inline-block; */
+  margin-right: 3rem;
+  
+}
+
+.form-control {
+  text-align: center;
+  font-weight: 900;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.notetakerR1{
+  display: flex;
+  justify-content: center;
+}
