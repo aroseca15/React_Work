@@ -314,20 +314,49 @@ border-radius: 50%;
 background-color: #059c67;
 }
 
+
+/* NoteTaker Component: */
 .controls{
   border-radius: 10px;
   /* display: inline-block; */
-  margin-right: 3rem;
+
   
 }
 
 .form-control {
   text-align: center;
   font-weight: 900;
-  margin-left: 3rem;
+  margin-left: 1rem;
   margin-right: 3rem;
+  border-radius: 12px;
 }
 .notetakerR1{
   display: flex;
   justify-content: center;
 }
+
+.noteTakerCard{
+  width: 50rem;
+  height: 60rem;
+  display: inline-block;
+  margin-right: 3rem;
+  background-color: #ac888f;
+  border-radius: 22px;
+}
+
+.saveNoteBtn{
+  width: 14rem;
+  height: 4rem;
+  border-radius: 10px;
+  background-color: #017A50;
+  color:cornsilk;
+  font-weight: 600;
+}
+
+.saveNoteBtn:hover{
+  background-color: #9DC1FF;
+  color: black;
+  font-weight: 600;
+}
+
+/*  */
