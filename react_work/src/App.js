@@ -90,6 +90,11 @@ function App() {
     <div className="App">
       <h1>Welcome Mandy!</h1>
       <h3>Try not to be upset. Do what you can and let Jehovah handle the rest.</h3>
+      <h1>Now it's time to work on documents components.</h1>
+
+
+
+      {/* BELOW THE NOTETAKER AND DISPLAY CARD ARE NOT YET RESPONSIVE. ALSO, DO NOT FORGET THE POP-UP AFTER PRESSING "SEE ALL" AND "VIEW".
       <NoteTaker />
       <div>
         <select className="controls NPSelect">
@@ -108,7 +113,10 @@ function App() {
       </div>
       <div style={{ display: 'inline-block' }}>
         <NoteDisplayCard />
-      </div>
+      </div> */}
+
+
+
       {/* <AppointmentForm />
       <Calendar components={{ toolbar: MyCustomHeader }} localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ width: 600, height: 500, margin: "50px" }} /> */}
     </div>
