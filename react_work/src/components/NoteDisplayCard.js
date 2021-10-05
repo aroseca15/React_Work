@@ -7,15 +7,33 @@ function NoteDisplayCard() {
         <form>
             <div className="card recentDisplayCard">
                 <form>
-                    <div className="">
-                        <h6>Patient1 Name</h6>
-                        <button>See All</button>
+                    <div className="DspCarHead mb-5">
+                        <h6>Patient Name</h6>
+                        <button className="DisCarHeadBtn">See All</button>
                     </div>
-                    <div>
-                        <p>Date and Time</p>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                        <button>View</button>
+                    <div className="DspCarBody mb-3">
+                        <p className="DspCarP">Date and Time</p>
+                        <button className="DspCarBodyBtn DCBBtnEdit">Edit</button>
+                        <button className="DspCarBodyBtn DCBBtnDelete">Delete</button>
+                        <button className="DspCarBodyBtn DCBBtnView">View</button>
+                    </div>
+                    <div className="DspCarBody mb-3">
+                        <p className="DspCarP">Date and Time</p>
+                        <button className="DspCarBodyBtn DCBBtnEdit">Edit</button>
+                        <button className="DspCarBodyBtn DCBBtnDelete">Delete</button>
+                        <button className="DspCarBodyBtn DCBBtnView">View</button>
+                    </div>
+                    <div className="DspCarBody mb-3">
+                        <p className="DspCarP">Date and Time</p>
+                        <button className="DspCarBodyBtn DCBBtnEdit">Edit</button>
+                        <button className="DspCarBodyBtn DCBBtnDelete">Delete</button>
+                        <button className="DspCarBodyBtn DCBBtnView">View</button>
+                    </div>
+                    <div className="DspCarBody mb-3">
+                        <p className="DspCarP">Date and Time</p>
+                        <button className="DspCarBodyBtn DCBBtnEdit">Edit</button>
+                        <button className="DspCarBodyBtn DCBBtnDelete">Delete</button>
+                        <button className="DspCarBodyBtn DCBBtnView">View</button>
                     </div>
                 </form>
             </div>

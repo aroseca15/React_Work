@@ -64,8 +64,19 @@ function App() {
     <div className="App">
       <h1>Welcome Mandy!</h1>
       <h3>Try not to be upset. Do what you can and let Jehovah handle the rest.</h3>
-      <NoteTaker/>
-      <NoteDisplayCard/>
+      <NoteTaker />
+      <div style={{ display: 'inline-block' }}>
+        <NoteDisplayCard />
+      </div>
+      <div style={{ display: 'inline-block' }}>
+        <NoteDisplayCard />
+      </div>
+      <div style={{ display: 'inline-block' }}>
+        <NoteDisplayCard />
+      </div>
+      <div style={{ display: 'inline-block' }}>
+        <NoteDisplayCard />
+      </div>
       {/* <AppointmentForm />
       <Calendar components={{ toolbar: MyCustomHeader }} localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ width: 600, height: 500, margin: "50px" }} /> */}
     </div>

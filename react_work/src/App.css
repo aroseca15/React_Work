@@ -361,7 +361,81 @@ background-color: #059c67;
 
 /* Recent Notes Display Card: */
 .recentDisplayCard{
-  height: 20rem;
-  width: 20rem;
+  height: 22rem;
+  width: 22rem;
   margin: 5rem;
+  background-color: #01694594;
 }
+
+.DspCarHead{
+  display: inline-flex;
+  margin-top: .5rem;
+  color: whitesmoke;
+}
+
+.DisCarHeadBtn {
+  margin-left: 8rem;
+  border-radius: 10px;
+  margin-right: .5rem;
+  width: 6rem;
+  height: 2rem;
+  color:#866068;
+  font-weight: 600;
+}
+
+.DisCarHeadBtn:hover{
+  border: solid;
+  color:black;
+  background-color: #9DC1FF;
+}
+
+.DspCarBody {
+  display: inline-flex;
+  
+}
+
+.DspCarBodyBtn {
+margin-right: .5rem;
+border-radius: 12px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+height: 1.8rem;
+}
+
+.DCBBtnEdit{
+background-color: #c4c0c1;
+font-weight: 600;
+}
+
+.DCBBtnEdit:hover{
+  background-color: #98737A;
+  color: #d4e2cb;
+}
+
+.DCBBtnDelete{
+  background-color: #d8899a;
+  font-weight: 600;
+}
+
+.DCBBtnDelete:hover{
+  background-color: #e72d55;
+  color: #d4e2cb;
+}
+
+.DCBBtnView{
+  background-color: #9DC1FF;
+  font-weight: 600;
+}
+
+.DCBBtnView:hover{
+  background-color: #095ef1;
+  color: #d4e2cb;
+}
+
+.DspCarP {
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  /* font-weight: 500; */
+}
+
