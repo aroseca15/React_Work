@@ -57,6 +57,32 @@ import NoteDisplayCard from './components/NoteDisplayCard';
 //     end: new Date(2021, 8, 24)
 //   }
 // ]
+const patients = [{
+  id: 1,
+  first: 'Jase',
+  last: 'Murph'
+},
+{
+  id: 2,
+  first: 'April',
+  last: 'Brockshaw'
+},
+{
+  id: 3,
+  first: 'Mandy ',
+  last: 'McDoon'
+},
+{
+  id: 4,
+  first: 'Nicole',
+  last: 'Mesa'
+},
+{
+  id: 5,
+  first: 'Logan',
+  last: 'Batton'
+}
+]
 
 
 function App() {
@@ -65,6 +91,12 @@ function App() {
       <h1>Welcome Mandy!</h1>
       <h3>Try not to be upset. Do what you can and let Jehovah handle the rest.</h3>
       <NoteTaker />
+      <div>
+        <select className="controls NPSelect">
+          <option>Select Patient Of Record:</option>
+          {patients.map((patient) => <option key={patient.id}>{patient.first} {patient.last}</option>)}
+        </select>
+      </div>
       <div style={{ display: 'inline-block' }}>
         <NoteDisplayCard />
       </div>
